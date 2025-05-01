@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+.main-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 32px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}

@@ -1,18 +1,47 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: hsla(152, 82%, 57%, 0.733);
 
-    .main{
+  .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: hsla(152, 82%, 57%, 0.733) ;
-    .left{
-        flex:1;
-        min-height: 600px;
-        background: linear-gradient(to right,hsla(152, 82%, 57%, 0.733), hsla(152, 97%, 46%, 0.733));
+    background: white;
+    height: 600px;
+    width: 50%;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    .left {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 5px 10px;
+      background:
+        linear-gradient(
+          to right,
+          lch(82.11% 102.14 137.38 / 0.363),
+          hsla(36, 62%, 60%, 0.233)
+        ),
+        url("../../assets/friends.jpeg"), no-repeat, center;
+      background-size: cover;
+
+      h2 {
+        font-size: 3rem;
+        color: white;
+        margin-bottom: 1rem;
+      }
     }
 
-    .right{
-
-        min-height: 600px;
+    .right {
+      flex: 1;
+      height: 100%;
     }
+  }
 }
