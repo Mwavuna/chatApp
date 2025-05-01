@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Mwavuna/chatApp",
+  "homepage": "https://github.com/Mwavuna/chatApp/frontend/",
 
   "scripts": {
     "dev": "vite",
