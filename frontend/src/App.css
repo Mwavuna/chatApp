@@ -43,7 +43,15 @@
 .main-font {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 32px;
+  font-weight: 60px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.heading-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 4em;
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
