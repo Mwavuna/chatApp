@@ -10,7 +10,7 @@ git push
 echo "Deploying frontend to production server..."
 npm --prefix frontend run build #build the dist folder in the frontend directory
 
-cp dist/index.html dist/404.html
+cp frontend/dist/index.html dist/404.html
 
 #copy index.html to 404.html to handle 404 errors in gh pages
 
