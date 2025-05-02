@@ -21,19 +21,19 @@ function App() {
   };
   const router = createBrowserRouter([
     {
-      path: "/login",
+      path: "/chatapp/login",
       element: <Login />,
     },
     {
-      path: "/signup",
+      path: "/chatApp/signup",
       element: <Signup />,
     },
     {
       path: "/",
       element: <Layout />,
       children: [
-        { index: true, element: <Home /> },
-        { path: "profile/:id", element: <Profile /> },
+        { path: "/chatApp", element: <Home /> },
+        { path: "chatApp/profile/:id", element: <Profile /> },
       ],
     },
     {
