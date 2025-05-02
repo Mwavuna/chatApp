@@ -32,8 +32,8 @@ function App() {
       path: "/chatApp",
       element: <Layout />,
       children: [
-        { path: "/chatApp", element: <Home /> },
-        { path: "/chatApp/profile/:id", element: <Profile /> },
+        { index: true, element: <Home /> },
+        { path: "profile/:id", element: <Profile /> },
       ],
     },
   ]);
