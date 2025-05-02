@@ -1,9 +1,10 @@
 import React from "react";
 import "./login.scss";
+import { Link } from "react-router-dom";
 function login() {
   return (
     <div className="main-font main ">
-      <div className="container">
+      <div className="login-container">
         <div className="left">
           <h2 className="heading-font">Hello World</h2>
           <p>
@@ -13,14 +14,17 @@ function login() {
             ipsam veritatis aut quasi?
           </p>
           <span>Don't have an account ? </span>
-          <a>Register</a>
+          <Link to="/chatApp/signup">
+            <button>Register</button>
+          </Link>
         </div>
+
         <div className="right">
           <h2>Login</h2>
           <form>
             <input type="text" placeholder="username" name="username" />
             <input type="password" placeholder="password" name="password" />
-            <a>Login</a>
+            <button>Login</button>
           </form>
         </div>
       </div>

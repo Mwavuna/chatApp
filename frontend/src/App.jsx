@@ -1,15 +1,43 @@
-import { useState } from "react";
+import Leftbar from "./components/leftbar/leftbar.jsx";
+import Rightbar from "./components/rightbar/rightbar.jsx";
+import Navbar from "./components/navbar/navbar.jsx";
 import Login from "./pages/login/login.jsx";
-import SignUp from "./pages/register/signup.jsx";
+import Signup from "./pages/register/signup.jsx";
+import Profile from "./pages/profile/profile.jsx";
+import Home from "./pages/home/home.jsx";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      {/* <Login /> */}
-      <SignUp />
-    </>
-  );
+  const Layout = () => {
+    return (
+      <div>
+        <Navbar />
+        <div style={{ display: "flex" }}>
+          <Leftbar />
+          <Outlet />
+          <Rightbar />
+        </div>
+      </div>
+    );
+  };
+  const router = createBrowserRouter([
+    {
+      path: "/chatApp",
+      element: <Layout />,
+      children: [
+        { path: "/chatApp", element: <Home /> },
+        { path: "/chatApp/profile/:id", element: <Profile /> },
+      ],
+    },
+    {
+      path: "/chatApp/login",
+      element: <Login />,
+    },
+    {
+      path: "/chatApp/signup",
+      element: <Signup />,
+    },
+  ]);
+  return <RouterProvider router={router} />;
 }
 
 export default App;
