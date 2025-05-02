@@ -21,20 +21,20 @@ function App() {
   };
   const router = createBrowserRouter([
     {
-      path: "/chatApp",
-      element: <Layout />,
-      children: [
-        { path: "/chatApp", element: <Home /> },
-        { path: "/chatApp/profile/:id", element: <Profile /> },
-      ],
-    },
-    {
       path: "/chatApp/login",
       element: <Login />,
     },
     {
       path: "/chatApp/signup",
       element: <Signup />,
+    },
+    {
+      path: "/chatApp",
+      element: <Layout />,
+      children: [
+        { path: "/chatApp", element: <Home /> },
+        { path: "/chatApp/profile/:id", element: <Profile /> },
+      ],
     },
   ]);
   return <RouterProvider router={router} />;
