@@ -5,9 +5,18 @@ import Login from "./pages/login/login.jsx";
 import Signup from "./pages/register/signup.jsx";
 import Profile from "./pages/profile/profile.jsx";
 import Home from "./pages/home/home.jsx";
-import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  Outlet,
+  RouterProvider,
+  createBrowserRouter,
+  Navigate,
+} from "react-router-dom";
+
 function App() {
-  const Layout = () => {
+  //variable to check if user is logged in
+  const islogggedin = true;
+
+  const DashboardLayout = () => {
     return (
       <div>
         <Navbar />
@@ -19,6 +28,11 @@ function App() {
       </div>
     );
   };
+
+  const ProtectedRoute = ({ children }) => {
+    return islogggedin ? children : <Navigate to="/chatApp/login" />;
+  };
+
   const router = createBrowserRouter([
     {
       path: "/chatapp/login",
@@ -30,7 +44,11 @@ function App() {
     },
     {
       path: "/",
-      element: <Layout />,
+      element: (
+        <ProtectedRoute>
+          <DashboardLayout />
+        </ProtectedRoute>
+      ),
       children: [
         { path: "/chatApp", element: <Home /> },
         { path: "chatApp/profile/:id", element: <Profile /> },
