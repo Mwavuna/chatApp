@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.scss";
 function home() {
-  return <div>Home3</div>;
+  return <div>Home4</div>;
 }
 
 export default home;
