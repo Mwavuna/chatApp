@@ -32,7 +32,7 @@ function navbar() {
         <NotificationsNoneOutlinedIcon className="icon" />
         <div className="user">
           <img src={myphoto} alt="user" />
-          <span>JGregson</span>
+          <span>Gregson</span>
         </div>
       </div>
     </div>
