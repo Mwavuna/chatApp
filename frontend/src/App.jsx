@@ -14,7 +14,7 @@ import {
 
 function App() {
   //variable to check if user is logged in
-  const islogggedin = false;
+  const islogggedin = true;
 
   const DashboardLayout = () => {
     return (
@@ -22,7 +22,9 @@ function App() {
         <Navbar />
         <div style={{ display: "flex" }}>
           <Leftbar />
-          <Outlet />
+          <div style={{ flex: 6 }}>
+            <Outlet />
+          </div>
           <Rightbar />
         </div>
       </div>

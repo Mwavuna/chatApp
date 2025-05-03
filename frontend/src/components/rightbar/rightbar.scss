@@ -1,0 +1,82 @@
+.rightbar {
+  display: flex;
+  flex: 3;
+  background: white;
+  position: sticky;
+  top: 76px;
+  height: calc(100vh - 80px);
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 5px;
+    .section {
+      box-shadow: 0px 0px 3px 1px #ccc;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      span {
+        color: rgb(124, 124, 124);
+      }
+      .user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .userInfo {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          position: relative;
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+          p {
+            color: rgb(124, 124, 124);
+          }
+          .dot {
+            position: absolute;
+            top: 0;
+            left: 30px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgb(15, 231, 15);
+          }
+
+          span {
+            color: black;
+          }
+        }
+        .buttons {
+          display: flex;
+          gap: 10px;
+          button {
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+
+            &:first-child {
+              background-color: rgb(15, 116, 231);
+              font-weight: 500;
+            }
+
+            &:last-child {
+              background-color: rgb(231, 15, 44);
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}

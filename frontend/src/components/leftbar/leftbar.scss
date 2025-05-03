@@ -1,0 +1,70 @@
+.leftbar {
+  display: flex;
+  flex: 2;
+  position: sticky;
+  top: 70px;
+  height: calc(100vh - 71px);
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+  }
+  .container {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      span {
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+    }
+
+    hr {
+      width: 100%;
+      border: none;
+      height: 1px;
+      background-color: #ccc;
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        span {
+          font-weight: 200;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
