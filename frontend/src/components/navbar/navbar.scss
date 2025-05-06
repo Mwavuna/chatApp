@@ -3,9 +3,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  border-bottom: solid 1px #ccc;
+  background-color: var(--bg);
+
+  color: var(--textColor);
+  border-bottom: solid 1px var(--border);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   position: sticky;
   top: 0;
@@ -19,13 +20,10 @@
       font-size: 1.5rem;
     }
 
-    .icon {
-    }
-
     .search {
       display: flex;
       gap: 10px;
-      border: solid 1px #ccc;
+      border: solid 1px var(--border);
       align-items: center;
       border-radius: 5px;
       padding: 5px;
@@ -33,6 +31,8 @@
         border: none;
         outline: none;
         width: 500px;
+        background-color: transparent;
+        color: var(--texColor);
       }
     }
   }
@@ -50,7 +50,7 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        border: solid 1px #ccc;
+        border: solid 1px var(--border);
         object-fit: cover;
       }
       span {

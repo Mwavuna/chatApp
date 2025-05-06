@@ -9,8 +9,11 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
+import { useContext } from "react";
+import { darkTheme } from "../../contexts/themeContext";
 import myphoto from "../../assets/myphoto.jpg";
 function navbar() {
+  const { dark, toggleTheme } = useContext(darkTheme);
   return (
     <div className="navbar">
       <div className="left">
@@ -19,7 +22,11 @@ function navbar() {
         </Link>
 
         <HomeIcon className="icon" />
-        <DarkModeOutlinedIcon className="icon" />
+        {dark ? (
+          <WbSunnyOutlinedIcon className="icon" onClick={toggleTheme} />
+        ) : (
+          <DarkModeOutlinedIcon className="icon" onClick={toggleTheme} />
+        )}
         <GridViewOutlinedIcon className="icon" />
         <div className="search">
           <SearchOutlinedIcon className="icon" />

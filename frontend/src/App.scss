@@ -1,0 +1,32 @@
+:root {
+  --text-color: #000;
+  --bg: rgb(23, 233, 198);
+  --logo: darkblue;
+  --bgSoft: rgb(64, 161, 145);
+  --textColor-soft: #555;
+  --border: rgba(0, 0, 255, 0.61);
+}
+
+* {
+  transition: all 1s ease;
+}
+
+.dark-theme {
+  --textColor: whitesmoke;
+  --bg: #13122cfa;
+  --logo: white;
+  --bgSoft: #1d1b5efa;
+  --textColorSoft: lightgray;
+  --border: #444;
+}
+
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 960px) {
+    @content;
+  }
+}

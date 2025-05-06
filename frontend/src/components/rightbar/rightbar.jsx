@@ -1,7 +1,13 @@
 import React from "react";
 import "./rightbar.scss";
 import myPhoto from "../../assets/myphoto.jpg";
+import { useContext } from "react";
+import { darkTheme } from "../../contexts/themeContext";
+import myphoto from "../../assets/myphoto.jpg";
+
 function rightbar() {
+  const { dark, toggleTheme } = useContext(darkTheme);
+
   return (
     <div className="rightbar">
       <div className="container">

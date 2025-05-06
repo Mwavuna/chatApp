@@ -1,4 +1,9 @@
+* {
+  // background: var(--bg);
+}
 .leftbar {
+  background: var(--bg);
+  color: var(--textColor);
   display: flex;
   flex: 2;
   position: sticky;
@@ -35,7 +40,7 @@
       width: 100%;
       border: none;
       height: 1px;
-      background-color: #ccc;
+      background-color: var(--border);
     }
 
     span {

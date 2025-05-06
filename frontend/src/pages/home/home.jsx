@@ -1,48 +1,82 @@
 import React from "react";
 import "./home.scss";
+import { useContext } from "react";
+import { darkTheme } from "../../contexts/themeContext";
 function home() {
+  const { dark } = useContext(darkTheme);
   return (
     <div className="home">
       <div className="container">
-        <div>Home</div>
-        <div>Home</div>
-        <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div> <div>Home</div>
-        <div>Home</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
+        <div>{dark ? "dark" : "light"}</div>
       </div>
     </div>
   );

@@ -5,21 +5,24 @@ import Login from "./pages/login/login.jsx";
 import Signup from "./pages/register/signup.jsx";
 import Profile from "./pages/profile/profile.jsx";
 import Home from "./pages/home/home.jsx";
+import "./App.scss";
 import {
   Outlet,
   RouterProvider,
   createBrowserRouter,
   Navigate,
 } from "react-router-dom";
-
+import { darkTheme } from "./contexts/themeContext.jsx";
+import { useContext } from "react";
 function App() {
   //variable to check if user is logged in
   const islogggedin = true;
-
+  const { dark } = useContext(darkTheme);
   const DashboardLayout = () => {
     return (
       <div>
         <Navbar />
+
         <div style={{ display: "flex" }}>
           <Leftbar />
           <div style={{ flex: 6 }}>
@@ -60,7 +63,11 @@ function App() {
       basename: "/chatApp",
     },
   ]);
-  return <RouterProvider router={router} />;
+  return (
+    <div className={`${dark ? "dark" : "light"}-theme`}>
+      <RouterProvider router={router} />
+    </div>
+  );
 }
 
 export default App;
