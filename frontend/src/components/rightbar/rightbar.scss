@@ -1,3 +1,4 @@
+@import "../../App.scss";
 .rightbar {
   display: flex;
   flex: 3;
@@ -9,6 +10,9 @@
   &::-webkit-scrollbar {
     display: none;
     width: 0px;
+  }
+  @include mobile {
+    display: none;
   }
 
   .container {

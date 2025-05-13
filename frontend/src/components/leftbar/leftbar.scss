@@ -1,6 +1,4 @@
-* {
-  // background: var(--bg);
-}
+@import "../../App.scss";
 .leftbar {
   background: var(--bg);
   color: var(--textColor);
@@ -13,6 +11,10 @@
   &::-webkit-scrollbar {
     display: none;
     width: 0px;
+  }
+
+  @include mobile {
+    display: none;
   }
   .container {
     padding: 10px;
