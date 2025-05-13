@@ -1,16 +1,16 @@
 .rightbar {
-  background-color: var(--bg);
   display: flex;
   flex: 3;
   background: var(--bgSoft);
   position: sticky;
-  top: 76px;
+  top: 50px;
   height: calc(100vh - 80px);
   overflow-y: scroll;
   &::-webkit-scrollbar {
     display: none;
     width: 0px;
   }
+
   .container {
     width: 100%;
     display: flex;

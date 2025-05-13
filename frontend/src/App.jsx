@@ -20,7 +20,7 @@ function App() {
   const { dark } = useContext(darkTheme);
   const DashboardLayout = () => {
     return (
-      <div>
+      <>
         <Navbar />
 
         <div style={{ display: "flex" }}>
@@ -30,7 +30,7 @@ function App() {
           </div>
           <Rightbar />
         </div>
-      </div>
+      </>
     );
   };
 
@@ -64,7 +64,10 @@ function App() {
     },
   ]);
   return (
-    <div className={`${dark ? "dark" : "light"}-theme`}>
+    <div
+      className={`${dark ? "dark" : "light"}-theme`}
+      style={{ padding: "0px", margin: "0px" }}
+    >
       <RouterProvider router={router} />
     </div>
   );
